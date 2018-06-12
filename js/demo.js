@@ -220,6 +220,7 @@
             this.showRevealer().then(() => {
                 this.DOM.fullviewItems[this.current].style.opacity = this.isGridHidden ? 1 : 0;
                 this.DOM.fullview.style.opacity = this.isGridHidden ? 1 : 0;
+                this.DOM.fullview.style.pointerEvents = this.isGridHidden ? 'auto' : 'none';
                 this.hideRevealer(this.isGridHidden ? 'up' : 'down');
                 this.isAnimating = false;
             });
